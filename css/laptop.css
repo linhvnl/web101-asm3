@@ -1,0 +1,87 @@
+/* ADDING RESPONSIVE ON BOOTSTRAP GROUND - FOR LAPTOP */
+@media screen and (min-width: 992px) {
+  /* cho LAPTOP, >= 992px */
+
+  /* NAVBAR -------------- */
+  /* ADD AND STYLE FOR PERSONAL IMAGE IN NAVBAR */
+  .nav-bar-item:nth-child(3) {
+    min-width: 260px;
+  }
+
+  #nav-bar::after {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    width: 180px;
+    height: 180px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    background-image: url(../images/my-avatar.jpg);
+    background-size: cover;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* TARGET - PERSONAL INFORMATION -------------- */
+  /* none */
+
+  /* JOB SKILL -------------- */
+  #job-info .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .job-info-item {
+    width: 100%;
+  }
+
+  /* CERTIFICATE - AWARD ---------------- */
+  .certificate-content-row img {
+    width: 35% !important;
+    height: fit-content;
+  }
+
+  /* PR0JECT ---------------- */
+  /* PR0JECT - CARD (table - detail of project) */
+  .project-content-card th {
+    width: 25%;
+  }
+
+  .project-content-card th,
+  .project-content-card td {
+    font-size: 16px;
+  }
+
+  /* FOOTER - CONTACT ---------------- */
+  /* none */
+
+  /* --------------------------- */
+  /* ---------------------------- */
+  /* PROJECT CHARTET STYLE ---------------- */
+  /* PROJECT CHARTET - General layout and style */
+  .projectchart > div {
+    grid-template-columns: 2fr 1fr 1fr;
+    /* gap: 24px; */
+  }
+
+  .projectchart-item.scope {
+    grid-row: 2;
+  }
+
+  .projectchart-item.timeline {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+  }
+
+  .projectchart-item {
+    padding-bottom: 48px;
+  }
+
+  .projectchart-content > div {
+    display: flex;
+    gap: 28px;
+  }
+}

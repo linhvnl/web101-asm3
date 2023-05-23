@@ -1,0 +1,57 @@
+/* ADDING RESPONSIVE ON BOOTSTRAP GROUND - FOR TABLET */
+@media screen and (min-width: 768px) {
+  /* cho TABLET, 768px <= x < 992px */
+
+  /* NAVBAR -------------- */
+  .nav-bar-item {
+    display: inline-block;
+    height: 60px;
+    border-right: 1.5px solid #ddd;
+    padding: 15px 25px 15px 35px;
+  }
+
+  .nav-bar-item:first-child {
+    border-left: 1.5px solid #ddd;
+  }
+
+  .nav-bar-item:nth-child(3) {
+    width: 60px;
+  }
+
+  /* TARGET - PERSONAL INFORMATION --------------*/
+  /* none */
+
+  /* JOB SKILL -------------- */
+  #job-info .row {
+    max-height: 1500px;
+  }
+
+  .job-info-item {
+    width: 48%;
+  }
+
+  /* CERTIFICATE - AWARD ---------------- */
+  .certificate-content-row:last-of-type {
+    border-top: 1.5px solid #d6c08d;
+  }
+
+  .certificate-content-row > div {
+    border-bottom: 0 !important;
+  }
+
+  .certificate-content-row > div:nth-child(2) {
+    border-left: 1.5px solid #d6c08d !important;
+  }
+
+  /* PR0JECT ---------------- */
+  /* PR0JECT - CARD (table - detail of project) */
+  .project-content-card th,
+  .project-content-card td {
+    font-size: 15px;
+  }
+
+  /* FOOTER - CONTACT ---------------- */
+  #footer i {
+    font-size: 180%;
+  }
+}

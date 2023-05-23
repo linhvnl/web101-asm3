@@ -1,0 +1,358 @@
+/* ADDING RESPONSIVE ON BOOTSTRAP GROUND - FOR MOBILE (min-width: 576px) */
+
+/* GENERAL CSS -------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #343a40;
+  line-height: 1.6;
+}
+
+/* section background */
+.bg-grey {
+  background: #f7f7f7;
+}
+
+/* BANNER -------------- */
+#banner {
+  color: #ced4da;
+  letter-spacing: -1px;
+  text-align: center;
+  height: 400px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+#banner h1 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #f8f9fa;
+  line-height: 1.2;
+}
+
+.banner-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* NAVBAR -------------- */
+#nav-bar i {
+  color: #1c7ed6;
+  margin-right: -3px;
+}
+
+#nav-bar a {
+  font-size: 14px;
+  color: #343a40;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#nav-bar p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 0.5;
+}
+
+#nav-bar span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* TARGET - PERSONAL INFORMATION -------------- */
+#personal-info {
+  background-color: #f5f5f5;
+}
+
+#personal-info ul {
+  list-style-type: none;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  padding-left: 0;
+}
+
+#personal-info span {
+  font-weight: 600;
+}
+
+.personal-icon {
+  font-size: 18px;
+  color: #1c7ed6;
+}
+
+/* JOB SKILL ---------------------------- */
+/* JOB SKILL - EACH ITEM LAYOUT */
+.job-info-item {
+  border: 1px solid #ddd;
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: auto 1fr;
+  row-gap: 32px;
+  padding: 48px 36px 36px;
+}
+
+.job-info-content {
+  grid-column: 1/-1;
+}
+
+.job-info-item h1 {
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.job-info-item i {
+  font-size: 32px;
+  color: #777;
+}
+
+/* JOB SKILL - CONTENT (EXPERIENCE-EDUCATION-ACTIVITY) */
+.job-info-content > ul {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.job-info-content > ul > li::marker {
+  font-size: 24px;
+  color: #1c7ed6;
+}
+
+.job-info-name {
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+.job-info-time {
+  font-size: 14px;
+  font-style: italic;
+}
+
+.job-info-details {
+  list-style-type: "- ";
+  list-style-position: inside;
+  padding-left: 0;
+  color: #495057;
+}
+
+/* JOB SKILL - HIGH LIGHT "PRESENT JOB" */
+.time-now {
+  padding: 2px 12px;
+  background-color: #1c7ed6;
+  border-radius: 7px;
+  color: #f8f9fa;
+}
+
+/* JOB SKILL - CONTENT (HOBBY) */
+.job-info-content-hobby {
+  display: flex;
+  column-gap: 24px;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.job-info-content-hobby > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-icon {
+  height: 40px;
+  width: 40px;
+  padding: 5%;
+  border: 1px solid #1c7ed6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hobby-icon i {
+  font-size: 18px;
+  color: #1c7ed6;
+}
+
+/* JOB SKILL - CONTENT (SKILL-LANGUAGE) */
+.skill-level span {
+  background-color: #dee2e6;
+  display: inline-block;
+  height: 2px;
+  width: 45px;
+  margin-right: 10px;
+}
+
+.skill-level .yes {
+  background-color: #199cdb;
+}
+
+.skill-level {
+  margin: -10px 0 15px;
+}
+
+/* CERTIFICATE - AWARD ---------------- */
+.certificate-content-row ul {
+  list-style-type: "- ";
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4;
+  color: #495057;
+}
+
+/* PR0JECT ---------------- */
+/* PR0JECT - CARD LAYOUT */
+.project-content-card > div {
+  border: 1px solid #ced4da;
+}
+
+/* PR0JECT - CARD (Year and position in project) */
+.project-year {
+  font-size: 14px;
+}
+
+.project-year > span {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #1c7ed6;
+  border-radius: 14px;
+  font-size: 12px;
+  color: #fff;
+  line-height: 1;
+  letter-spacing: -0.5px;
+  align-self: baseline;
+}
+
+/* PR0JECT - CARD (table - detail of project) */
+.project-content-card table {
+  border-collapse: collapse;
+}
+
+.project-content-card th {
+  width: 18%;
+  font-weight: 500;
+}
+
+.project-content-card th,
+.project-content-card td {
+  border-top: 1px solid #ced4da;
+  padding: 8px;
+  vertical-align: top;
+  text-align: left;
+  color: #495057;
+}
+
+/* FOOTER - CONTACT ---------------- */
+
+#footer a {
+  font-size: 18px;
+  color: #868e96;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#footer i {
+  color: #1c7ed6;
+  font-size: 200%;
+}
+
+/* --------------------------- */
+/* ---------------------------- */
+/* PROJECT CHARTER STYLE ---------------- */
+/* PROJECT CHARTER - General layout and style */
+.projectchart > div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.projectchart-item {
+  /* color: BLUE 0*/
+  background-color: #e7f5ff;
+  padding: 24px 16px;
+}
+
+.projectchart-item h1 {
+  /* color: text-primary of Bootstrap */
+  color: #0d6efd;
+  font-size: 28px;
+  font-weight: bolder;
+  letter-spacing: -0.5px;
+  padding: 0 0 16px;
+  /* color: GRAY 5 */
+  border-bottom: 1px solid #adb5bd;
+}
+
+.projectchart-content > div {
+  padding: 8px 0 12px 16px;
+}
+
+.projectchart-content svg {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+}
+
+.projectchart-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.projectchart-content p {
+  margin: 0;
+}
+
+/* PROJECT CHARTER - Goal style plus */
+.goal .projectchart-content > div {
+  /* color: GRAY 3 */
+  border-bottom: 1px solid #dee2e6;
+  padding: 12px 0 8px 16px;
+}
+
+.goal .projectchart-content svg {
+  width: 30px;
+  height: 30px;
+  margin: 8px 22px 0;
+  border-radius: 0;
+}
+
+/* PROJECT CHARTER - Scope style plus */
+/* by class Bootstrap on the element */
+
+/* PROJECT CHARTER - Timeline style plus */
+.timeline .number-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  padding: 18px;
+  margin-bottom: 4px;
+  border: 1.5px solid #666;
+  /* color: VIOLET 5 */
+  background-color: #845ef7;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.timeline .projectchart-content > div > div:last-child {
+  /* color: CYAN 5 */
+  border-bottom: 1px dashed #22b8cf;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  width: 100%;
+}
